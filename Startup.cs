@@ -33,6 +33,8 @@ namespace SwaggerLab
             {
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "My API", Version = "v1" });
             });
+
+            services.AddSwaggerGenNewtonsoftSupport(); // explicit opt-in
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
