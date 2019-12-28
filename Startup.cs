@@ -34,6 +34,7 @@ namespace SwaggerLab
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "My API", Version = "v1" });
             });
 
+            //¤ä´©NewtonsoftªºJsonIgnore
             services.AddSwaggerGenNewtonsoftSupport(); // explicit opt-in
         }
 
