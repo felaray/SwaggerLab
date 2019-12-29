@@ -10,7 +10,8 @@ namespace SwaggerLab.Model
         /// <summary>
         /// 用STJ設定忽略 
         /// </summary>
-        [System.Text.Json.Serialization.JsonIgnore]
+        //[System.Text.Json.Serialization.JsonIgnore]  // (與Newtonsoft只能擇一)
+        [Newtonsoft.Json.JsonIgnore]
         public Guid ID { get; set; } = Guid.NewGuid();
         
         /// <summary>
