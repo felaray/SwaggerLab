@@ -37,6 +37,12 @@ namespace SwaggerLab.Controllers
             return Ok();
         }
 
+        /// <summary>
+        /// 使用 JsonPatchDocument 進行資料的部分更新
+        /// </summary>
+        /// <param name="id"></param>
+        /// <param name="patchDoc"></param>
+        /// <returns></returns>
         [HttpPatch("{id}")]
         public async Task<IActionResult> UpdateAsync(Guid id, JsonPatchDocument<User> patchDoc)
         {
