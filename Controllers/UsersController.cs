@@ -21,6 +21,10 @@ namespace SwaggerLab.Controllers
             _context = context;
         }
 
+        /// <summary>
+        /// Get Users
+        /// </summary>
+        /// <returns></returns>
         // GET: api/Users
         [HttpGet]
         public async Task<ActionResult<IEnumerable<User>>> GetUser()
@@ -28,6 +32,11 @@ namespace SwaggerLab.Controllers
             return await _context.User.ToListAsync();
         }
 
+        /// <summary>
+        /// Get User data
+        /// </summary>
+        /// <param name="id"></param>
+        /// <returns></returns>
         // GET: api/Users/5
         [HttpGet("{id}")]
         public async Task<ActionResult<User>> GetUser(Guid id)
