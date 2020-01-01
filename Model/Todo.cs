@@ -14,6 +14,9 @@ namespace SwaggerLab.Model
         [Required]
         public User User { get; set; }
 
+        [Required]
+        public string Note { get; set; }
+
         public DateTimeOffset DeadLine { get; set; }
 
         public DateTimeOffset CreateDT { get; set; } = DateTime.Now;

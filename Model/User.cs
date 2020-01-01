@@ -13,7 +13,7 @@ namespace SwaggerLab.Model
         /// </summary>
         //[System.Text.Json.Serialization.JsonIgnore]  // (與Newtonsoft只能擇一)
         //[Newtonsoft.Json.JsonIgnore]
-        public Guid ID { get; set; } = Guid.NewGuid();
+        public Guid ID { get; set; } 
 
 
         /// <summary>
@@ -42,5 +42,7 @@ namespace SwaggerLab.Model
         /// </summary>
         [Newtonsoft.Json.JsonIgnore]
         public DateTimeOffset CreateDT { get; set; }
+
+        public DateTimeOffset UpdateDT { get; set; }
     }
 }
