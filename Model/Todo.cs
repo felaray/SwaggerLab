@@ -20,5 +20,7 @@ namespace SwaggerLab.Model
         public DateTimeOffset DeadLine { get; set; }
 
         public DateTimeOffset CreateDT { get; set; } = DateTime.Now;
+
+        public int Rating { get; set; }
     }
 }
